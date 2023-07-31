@@ -13,3 +13,7 @@ h2 {
 input {
   @apply w-full rounded-md bg-[#333333] px-4 py-2 text-white;
 }
+
+hr {
+  @apply my-4 opacity-30;
+}

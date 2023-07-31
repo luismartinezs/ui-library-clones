@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Layout from "~/components/Layout";
+import { Section } from "~/components/Section";
 import { useLocalStorage } from "~/usehooks/useLocalStorage";
 
 export default function UseHooksPage() {
@@ -13,8 +14,7 @@ export default function UseHooksPage() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-        <section className="flex flex-col gap-2">
-          <h2>useLocalStorage</h2>
+        <Section title="useLocalStorage">
           <div>Current meaning: {meaning}</div>
           <label>
             Meaning:
@@ -27,7 +27,7 @@ export default function UseHooksPage() {
           <div className="text-sm text-gray-400">
             Refreshing page should persist change
           </div>
-        </section>
+        </Section>
       </Layout>
     </>
   );
