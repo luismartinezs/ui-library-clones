@@ -1,6 +1,17 @@
 import classnames from "classnames";
 import Link from "next/link";
 
+const links = [
+  {
+    label: "Mantine",
+    href: "/mantine",
+  },
+  {
+    label: "UseHooks",
+    href: "/usehooks",
+  },
+];
+
 export function Header(props: React.ComponentPropsWithoutRef<"header">) {
   const { className, ...otherProps } = props;
 
@@ -11,11 +22,13 @@ export function Header(props: React.ComponentPropsWithoutRef<"header">) {
     >
       <nav>
         <ul className="flex items-center justify-center gap-4">
-          <li>
-            <Link href="/mantine" className="hover:underline">
-              Mantine
-            </Link>
-          </li>
+          {links.map((link) => (
+            <li key={link.href}>
+              <Link href={link.href} className="hover:underline">
+                {link.label}
+              </Link>
+            </li>
+          ))}
         </ul>
       </nav>
     </header>

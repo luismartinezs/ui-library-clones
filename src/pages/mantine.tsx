@@ -2,7 +2,7 @@ import Head from "next/head";
 import Layout from "~/components/Layout";
 import { Button } from "~/mantine/core/Button";
 
-export default function Home() {
+export default function MantinePage() {
   return (
     <>
       <Head>

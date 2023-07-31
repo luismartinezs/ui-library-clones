@@ -3,5 +3,13 @@
 @tailwind utilities;
 
 body {
-  @apply min-h-screen bg-gradient-to-b from-[#1e1e1e] to-[#111111] font-sans text-white;
+  @apply min-h-screen bg-gradient-to-b from-[#272727] to-[#111111] font-sans text-white;
+}
+
+h2 {
+  @apply text-2xl font-bold;
+}
+
+input {
+  @apply w-full rounded-md bg-[#333333] px-4 py-2 text-white;
 }
